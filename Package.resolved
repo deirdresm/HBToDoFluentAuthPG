@@ -68,8 +68,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/hummingbird-project/hummingbird-fluent.git",
       "state" : {
-        "revision" : "4e99ed2719205b3edad79267b364d7db68450ed9",
-        "version" : "2.0.0-beta.4"
+        "revision" : "4e80bf86d44223eed7e1366d5d8ab23205c0cd14"
       }
     },
     {

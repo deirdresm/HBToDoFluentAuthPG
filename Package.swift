@@ -3,6 +3,9 @@
 
 import PackageDescription
 
+//
+let fluentRevision = "4e80bf86d44223eed7e1366d5d8ab23205c0cd14" // include fix mentioned in https://github.com/hummingbird-project/hummingbird-examples/pull/112
+
 let package = Package(
     name: "ToDosFluentAuth",
     platforms: [.macOS(.v14)],
@@ -12,12 +15,12 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/hummingbird-project/hummingbird.git", from: "2.0.1"),
 		.package(url: "https://github.com/hummingbird-project/hummingbird-auth.git", from: "2.0.0-rc.4"),
-		.package(url: "https://github.com/hummingbird-project/hummingbird-fluent.git", from: "2.0.0-beta.4"),
-		.package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.5.0"),
+		.package(url: "https://github.com/hummingbird-project/hummingbird-fluent.git", revision: fluentRevision),
+		.package(url: "https://github.com/hummingbird-project/swift-mustache.git", from: "2.0.0-rc.1"),
 		.package(url: "https://github.com/vapor/fluent-kit.git", from: "1.49.0"),
 		.package(url: "https://github.com/vapor/fluent-postgres-driver.git", from: "2.9.2"),
-		.package(url: "https://github.com/vapor/fluent-sqlite-driver", from: "4.7.4"),
-		.package(url: "https://github.com/hummingbird-project/swift-mustache.git", from: "2.0.0-rc.1"),
+		.package(url: "https://github.com/vapor/fluent-sqlite-driver.git", from: "4.7.4"),
+		.package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.5.0"),
     ],
     targets: [
 		.executableTarget(
